@@ -1,35 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Saloni-hub 
-Saloni-hub
-/
-JS-Assignment-Stage-4---Enclosed-Rectangles-JS
-generated from Newton-School/Enclosed-Rectangles-Js-BoilerPlate
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-JS-Assignment-Stage-4---Enclosed-Rectangles-JS/src/components/index.js /
-@Saloni-hub
-Saloni-hub enc
-Latest commit 08cd314 on Nov 23, 2020
- History
- 1 contributor
-80 lines (72 sloc)  1.77 KB
-  
 //rec = {
 //	top: '25px',
 //	left: '96px',
@@ -49,8 +17,7 @@ function updateStructure(recA, recB) {
 	else if (contains(recB, recA)) {
 		const relativeDim = relative(recB, recA);
 		return { ...recB, children: [relativeDim] };
-	} 
-	else {
+	} else {
 		return { ...recA };
 	}
 }
@@ -109,4 +76,3 @@ function normalize(rec) {
 }
 
 module.exports = updateStructure;
-
