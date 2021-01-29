@@ -50,9 +50,9 @@ function updateStructure(recA, recB) {
 		const relativeDim = relative(recB, recA);
 		return { ...recB, children: [relativeDim] };
 	} 
-	// else {
-	// 	return { ...recA };
-	// }
+	else {
+		return { ...recA };
+	}
 }
 
 function relative(recA, recB) {
